@@ -1,4 +1,4 @@
-#include "main.h"
+#include "funcs.h"
 
 int main(void)
 {
@@ -30,4 +30,12 @@ int main(void)
     _strcat(c1,c2);
     printf("fullname is: %s\n", c1);
     printf("It works\n");
+
+    /* Test for _strlen */
+    printf("**********string length**********\n");
+    char exmp[] = "My name is";
+    int len = _strlen(exmp);
+    printf("%d", len);
+
+    return (0);
 }

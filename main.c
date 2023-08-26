@@ -1,5 +1,4 @@
-#ifndef main_h
-#define main_h
+#include "funcs.h"
 /**
  * _putchar - prints characters in the console
  * @c: character to be printed
@@ -43,11 +42,23 @@ int _strcmp(char *s1, char *s2)
         return (flag);
 }
 
+/* Get the length of a string */
+int _strlen(char *s)
+{
+    int i, len;
+
+    for (i = 0; s[i] != '\0'; i++)
+    {
+        len = i + 1;
+    }
+    return (len);
+}
+
 /* Concatenating 2 strings */
 char _strcat(char *dest, char *src)
 {
     int i;
-    int s1 = strlen(dest);
+    int s1 = _strlen(dest);
 
     for (i = 0; src[i] != '\0'; i++)
     {
@@ -56,4 +67,3 @@ char _strcat(char *dest, char *src)
     }
     dest[s1] = '\0';
 }
-#endif
