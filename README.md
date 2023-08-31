@@ -1,5 +1,8 @@
-This is a collection of some c functions such as:-
-* putchar = _putchar
-* strcmp = _strcmp
-* strcat = _strcat
-* strncat = _strncat
+# IMPLEMENTATION OF C FUNCTIONS
+
+This is how I have made my own implementation of some c functions:
+
+- _strlen ( using for loop)
+- _strlen ( using Recursion)
+- _puts_recursion
+- _pow_recursion
